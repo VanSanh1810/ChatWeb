@@ -1,0 +1,68 @@
+.navbar {
+    max-width: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 25px;
+    padding-top: 30px;
+}
+.navbar img {
+    display: flex;
+    max-width: 100;
+    cursor: pointer;
+}
+.nav__block {
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    max-width: 100;
+}
+.nav {
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    transition: all ease-in-out 0.25s;
+}
+
+.nav.selected {
+    color: rgb(54, 4, 254);
+}
+
+.nav span {
+    cursor: default;
+    overflow: hidden;
+}
+
+.nav i {
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.app__main {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav__block_main_feature {
+    font-size: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.nav__block_main_feature .have_new_mess {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 66, 66);
+}
+
+.nav .have_new_notify {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 33, 33);
+}

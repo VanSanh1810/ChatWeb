@@ -1,0 +1,113 @@
+.notify_nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.notify_nav button {
+    border: 0;
+    background: 0;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(98, 98, 98);
+    font-weight: 700;
+    font-size: 17px;
+    margin-right: 10px;
+    width: 80px;
+    background-color: rgb(205, 205, 205);
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.notify_nav button.selected {
+    background-color: rgb(108, 94, 240);
+    color: #dbdbdb;
+}
+
+.notifyMain {
+    flex-direction: column;
+}
+
+.notifyMain h3 {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+
+.notify_container {
+    border-top: 1px solid #d1d1d1;
+    margin-top: 10px;
+    height: 77vh;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+.notify_container h5 {
+    color: #aaaaaa;
+}
+
+.main__notify_item {
+    background-color: rgb(222, 222, 222);
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.main__notify_item.read {
+    background-color: rgb(247, 247, 247);
+}
+
+.main__notify_item img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.notify_item_content {
+    flex-grow: 2;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 10px;
+    font-weight: 700;
+}
+
+.notify_item_content p {
+    margin: 0;
+}
+
+.notify_item_content p:nth-child(2) {
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.notify_item_setting svg {
+    padding: 5px 6px;
+    background-color: #cecece;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.notify_item_action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.notify_item_action button {
+    background: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: rgb(209, 209, 209);
+    color: #212121;
+    cursor: pointer;
+}
+
+.notify_item_action button.btn_success {
+    background-color: rgb(128, 255, 128);
+}

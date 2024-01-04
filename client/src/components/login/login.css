@@ -1,0 +1,71 @@
+.login__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__form span{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+.login__form h3{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    margin: 10px;
+    font-weight: bolder;
+    color: red;
+}
+
+.login__form h3.notify{
+    color: rgb(2, 168, 2) !important;
+}
+
+.login__form input {
+    padding: 20px;
+    margin: 10px;
+    height: 45px;
+    width: 300px;
+    outline: none;
+    border: 0;
+    background-color: rgb(214, 214, 214);
+    border-radius: 5px;
+    font-family: 'Rototo', sans-serif;
+    box-sizing: border-box;
+    line-height: 45px;
+    font-size: 16px;
+}
+
+.login__form button {
+    display: flex;
+    background-color: #6176dd;
+    width: auto !important;
+    height: 50px;
+    margin: 20px 10px;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: antiquewhite;
+    box-shadow: 9px 7px 25px 1px rgba(0,0,0,0.28);
+    transition: all 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+
+.login__form button:hover {
+    box-shadow: 9px 7px 25px 1px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+.fg-link {
+    text-decoration: none;
+    color: rgb(114, 114, 114);
+}
+
+.fg-link:hover {
+    color: rgb(72, 72, 72);
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+.room_type_radio_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(210, 210, 210);
+    padding: 10px;
+    border-radius: 10px;
+    user-select: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.room_type_radio_item:hover {
+    background-color: rgb(202, 202, 202);
+}
+
+.room_type_radio_item.selected {
+    background-color: rgb(168, 168, 168);
+}
+
+.room_type_radio_item_info {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    flex-grow: 2;
+}
+
+.room_type_radio_item_info p {
+    font-size: 15px;
+}
+
+.room_type_radio_item_info p:nth-child(2) {
+    font-size: 13px;
+    opacity: 50%;
+}

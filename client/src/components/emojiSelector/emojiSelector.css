@@ -1,0 +1,84 @@
+.emoji_main {
+    position: absolute;
+    background-color: rgb(235, 235, 235);
+    width: 26vw;
+    height: 37vh;
+    transform: translate(50px, -38vh);
+    border-radius: 10px 10px 10px 5px;
+    box-shadow: 2px 2px 26px -9px rgba(0, 0, 0, 0.6);
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+}
+
+.emoji_searchForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(221, 221, 221);
+    margin: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    color: rgb(101, 101, 101);
+}
+
+.emoji_searchForm input {
+    flex-grow: 2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.emoji_data {
+    overflow-y: scroll;
+    flex-grow: 3;
+    padding: 0px 10px 10px 10px;
+    scroll-behavior: smooth;
+}
+
+.emoji_data label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(134, 134, 134);
+}
+
+.emoji_category {
+    border-top: 1px solid #cecece;
+}
+
+.emoji_category button {
+    font-size: 14px !important;
+    color: rgb(113, 113, 113);
+    transition: all 0.2s ease-in-out;
+}
+.emoji_category button:hover {
+    color: rgb(67, 67, 255);
+    font-size: 14px !important;
+    transform: none;
+}
+
+.emoji_category button.selected {
+    color: rgb(67, 67, 255);
+}
+
+.emo_cate_container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+}
+
+.emo-item {
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.emo-item:hover {
+    background-color: rgb(173, 173, 173);
+    border-radius: 5px;
+}

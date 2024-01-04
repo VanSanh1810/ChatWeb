@@ -1,0 +1,142 @@
+.room_content_main {
+    flex-grow: 2;
+    height: 100%;
+    background-color: rgb(229, 229, 229);
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px;
+    border-left: 1px solid rgb(212, 212, 212);
+}
+
+.room_content_title {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    width: 100%;
+    border-bottom: 1px solid #9f9f9f;
+    user-select: none;
+}
+.room_content_title svg {
+    margin-right: 10px;
+}
+
+.text_room_content_main {
+    width: 100%;
+    height: 84vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.text_room_content_chat_contain {
+    flex-grow: 2;
+    overflow-y: scroll;
+    padding: 20px 0px;
+}
+
+.text_room_content_chat_input {
+    background-color: rgb(217, 217, 217);
+    border-radius: 10px;
+}
+
+/* Voice room */
+.voice_room_content_main {
+    background: rgb(40, 40, 40);
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.voice_room_content_main_videoGrid {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(30%);
+        opacity: 0%;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+@keyframes slide-out {
+    from {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+    to {
+        transform: translateY(30%);
+        opacity: 0%;
+    }
+}
+
+.voice_room_content_main:hover .voice_room_content_main_action {
+    animation: slide-in 0.2s ease-out;
+    display: flex;
+}
+
+.voice_room_content_main_action {
+    position: absolute;
+    padding-bottom: 30px;
+    display: none;
+}
+
+.voice_room_content_main_action button {
+    border: none;
+    background: none;
+    font-size: 25px;
+    margin: 10px 40px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(65, 65, 65);
+    padding: 0px;
+    border-radius: 50px;
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.voice_room_content_main_action button.selected {
+    background-color: rgb(233, 233, 233);
+}
+
+.voice_room_content_main_action button:nth-child(4) {
+    background-color: rgb(255, 61, 61);
+}
+
+.voice_room_content_main_videoGrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.voice_room_content_video_grid {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+/* 3 or more */
+.temp_video.three_or_more {
+    max-width: calc(33.33% - 10px);
+    /* background-color: aqua; */
+}
+
+.temp_video {
+    max-width: calc(50% - 10px);
+    border-radius: 6px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin: 4px;
+}

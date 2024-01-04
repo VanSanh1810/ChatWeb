@@ -1,0 +1,38 @@
+{
+  "name": "chatapp_server",
+  "version": "1.0.0",
+  "description": "This is a backend part for ChatApp project",
+  "main": "./src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon ./src/server.js",
+    "start": "node src/server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "chat",
+    "chatapp",
+    "expressjs",
+    "api"
+  ],
+  "author": "VanSanh",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "csurf": "^1.11.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.10.1",
+    "socket.io": "^4.7.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": "18.12.1"
+  }
+}

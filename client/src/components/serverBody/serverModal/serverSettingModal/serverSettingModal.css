@@ -1,0 +1,46 @@
+.serverSetting_modal_nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #6e6e6e;
+}
+
+.serverSetting_modal_nav button {
+    background: none;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 4px 4px 0px 0px;
+    transition: all 0.2s ease-out;
+}
+
+.serverSetting_modal_nav button.selected {
+    background-color: rgb(101, 70, 255);
+    color: rgb(230, 230, 230);
+}
+
+.add_role_btn {
+    margin-bottom: 10px;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(112, 77, 255);
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.roles_container {
+    margin-top: 10px;
+    border-top: 1px solid #ababab;
+    max-height: 30vh;
+    overflow-y: scroll;
+}

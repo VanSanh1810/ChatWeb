@@ -1,0 +1,35 @@
+const express = require('express');
+const route = express.Router();
+const authMiddleware = require('../middlewares/auth.middleware');
+const serverApi = require('../api/server.api');
+const userMiddleware = require('../middlewares/user.middleware');
+
+route.put('/createServer', authMiddleware.VerifyIdToken, serverApi.CreateServer);
+route.put('/updateServer', authMiddleware.VerifyIdToken, serverApi.UpdateServerInfo);
+route.post('/createRole', authMiddleware.VerifyIdToken, serverApi.CreateRole);
+route.put('/updateRole', authMiddleware.VerifyIdToken, serverApi.UpdateRole);
+route.put('/updateRolePermisson', authMiddleware.VerifyIdToken, serverApi.UpdateRolePermission);
+route.put('/updateRoleOrder', authMiddleware.VerifyIdToken, serverApi.UpdateRoleOrder);
+route.post('/deleteUserRole', authMiddleware.VerifyIdToken, serverApi.DeleteUserRole);
+route.put('/addUserToRole', authMiddleware.VerifyIdToken, serverApi.AddUserToRole);
+route.put('/removeUserFromRole', authMiddleware.VerifyIdToken, serverApi.RemooveUserFromRole);
+route.put('/deleteRole', authMiddleware.VerifyIdToken, serverApi.DeleteRole);
+// route.post('/removeUserFromServer', authMiddleware.VerifyIdToken, serverApi.RemoveUserFromServer);
+route.post('/removeUserFromServer', authMiddleware.VerifyIdToken, serverApi.KickUser);
+route.post('/getServerInviteKey', authMiddleware.VerifyIdToken, serverApi.GetServerInviteKey);
+route.post('/joinServer', authMiddleware.VerifyIdToken, serverApi.JoinServer);
+route.post('/inviteJoinServer', authMiddleware.VerifyIdToken, serverApi.JoinServerByInvitation, userMiddleware.RemoveNotify);
+route.put('/createChannel', authMiddleware.VerifyIdToken, serverApi.CreateChannel);
+route.put('/updateChannel', authMiddleware.VerifyIdToken, serverApi.UpdateChannel);
+route.put('/removeAccessFromChannel', authMiddleware.VerifyIdToken, serverApi.RemoveAccessFromChannel);
+route.put('/addAccessToChannel', authMiddleware.VerifyIdToken, serverApi.AddAccessToChannel);
+route.put('/createRoom', authMiddleware.VerifyIdToken, serverApi.CreateRoom);
+route.put('/leaveServer', authMiddleware.VerifyIdToken, serverApi.LeaveServer);
+route.put('/deleteChannel', authMiddleware.VerifyIdToken, serverApi.DeleteChannel);
+route.put('/renameRoom', authMiddleware.VerifyIdToken, serverApi.RenameRoom);
+route.put('/deleteRoom', authMiddleware.VerifyIdToken, serverApi.DeleteRoom);
+route.put('/moveRoom', authMiddleware.VerifyIdToken, serverApi.MoveRoom);
+route.post('/inviteToServer', authMiddleware.VerifyIdToken, serverApi.InviteToServer);
+route.post('/removeBan', authMiddleware.VerifyIdToken, serverApi.RemoveBan);
+
+module.exports = route;

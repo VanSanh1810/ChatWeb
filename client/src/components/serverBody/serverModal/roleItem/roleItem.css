@@ -1,0 +1,174 @@
+.main_role_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(196, 196, 196);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.main_role_item button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.main_role_item button:hover {
+    background-color: antiquewhite;
+}
+
+.main_role_item h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.main_role_setting_box {
+    position: absolute;
+    width: 120px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s ease-out;
+}
+
+.main_role_setting_box button {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    width: 100%;
+    transition: all 0.2s ease-out;
+}
+
+.main_role_setting_box button:hover {
+    background-color: rgb(110, 110, 255);
+    color: antiquewhite;
+}
+
+.main_role_setting_box button:nth-child(2) {
+    color: red;
+}
+
+.main_role_setting_box button:nth-child(2):hover {
+    background-color: rgb(255, 50, 50);
+    color: antiquewhite;
+}
+
+.role_user_list {
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+
+.role_user_list::-webkit-scrollbar {
+    display: none;
+}
+
+.role_user_list_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 5px 0px;
+    background-color: rgb(220, 220, 220);
+    border-radius: 10px;
+}
+
+.role_user_list_item img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.role_user_list_item p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    flex-grow: 2;
+    padding-left: 20%;
+}
+
+.role_user_list_item svg {
+    cursor: pointer;
+}
+
+.role_user_addUser {
+    border: 0;
+    background: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: rgb(92, 77, 255);
+    color: antiquewhite;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.role_nav_container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #7d7c7c;
+}
+
+.role_nav_container button {
+    border: 0;
+    background: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s ease-in-out;
+}
+
+.role_nav_container button.selected {
+    color: rgb(72, 52, 255);
+    border-bottom: 1px solid rgb(72, 52, 255);
+}
+
+.role_permission_container {
+    max-height: 50vh;
+    overflow-y: scroll;
+}
+
+.role_permission_item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    border-bottom: 1px solid #b8b8b8;
+}
+
+.role_permission_item div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.role_permission_item p {
+    font-size: 13px;
+    color: #848484;
+}
+
+.role_permission_container h5 {
+    font-family: 'Roboto', sans-serif;
+    color: #858585;
+    margin: 25px 0px 5px 0px;
+}

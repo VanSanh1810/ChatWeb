@@ -1,0 +1,35 @@
+.three_state_btn {
+    display: flex;
+    flex-direction: row;
+    border-radius: 7px;
+    background-color: rgb(215, 215, 215);
+    justify-content: space-between;
+    z-index: 20;
+}
+
+.three_state_btn > * {
+    padding: 6px 7px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(159, 159, 159);
+    z-index: 10;
+    transition: all 0.2s ease-out;
+    font-size: 11px;
+}
+
+.three_state_btn div:nth-child(2) {
+    padding: 0px 9px;
+}
+
+.three_state_btn div:nth-child(1) {
+    padding: 0px 8px;
+}
+
+.three_state_btn div.selected {
+    background-color: rgb(66, 66, 255);
+    color: aliceblue;
+    border-radius: 7px;
+}

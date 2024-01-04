@@ -1,0 +1,28 @@
+.user_role_to_select_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(216, 216, 216);
+    padding: 5px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.user_role_to_select_item input[type='checkbox'] {
+    width: 20px; /* Chiều rộng */
+    height: 20px; /* Chiều cao */
+}
+
+.user_role_to_select_item_data {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-grow: 2;
+}
+
+.user_role_to_select_item_data img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}

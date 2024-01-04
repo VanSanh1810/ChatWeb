@@ -1,0 +1,38 @@
+.searchSuggest__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 90%;
+    max-width: 200px;
+    min-height: 70px;
+    background-color: rgb(224, 224, 224);
+    margin-top: 9px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0px 25px;
+    overflow: hidden;
+}
+
+.searchSuggest__item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.searchSuggest__item_text {
+    margin-left: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.searchSuggest__item_text span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    width: 200px;
+    overflow: hidden;
+}
+
+.searchSuggest__item_text span:nth-child(1) {
+    font-weight: 600;
+}

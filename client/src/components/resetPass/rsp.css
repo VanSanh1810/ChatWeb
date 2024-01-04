@@ -1,0 +1,12 @@
+.rsp__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.rsp__form span{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    margin: 30px;
+    font-weight: bolder;
+}

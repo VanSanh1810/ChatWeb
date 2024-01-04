@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+.server_createServer_Modal {
+    z-index: 20;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(110, 110, 110, 0.762);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+}
+
+.server_createServer_Modal_box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(228, 228, 228);
+    border-radius: 10px;
+    padding: 0px 30px 30px 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.server_createServer_Modal_box input {
+    font-family: 'Roboto', sans-serif;
+    border: 0;
+    background: none;
+    background-color: aliceblue;
+    font-size: 18px;
+    padding: 13px;
+    border-radius: 10px;
+    font-weight: 800;
+    outline: 0;
+    width: 100%;
+}
+
+.server_createServer_Modal_box h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+}
+
+.server_createServer_Modal_box p {
+    width: 31vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: rgb(122, 122, 122);
+    align-self: center;
+}
+
+#scsm_createBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    background: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    background-color: rgb(145, 118, 255);
+    color: rgb(222, 222, 222);
+    padding: 14px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.server_createServer_Modal_controls {
+    display: flex;
+    justify-content: end;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+.server_createServer_Modal_controls button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.server_createServer_Modal_imgInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.server_createServer_Modal_imgInput img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.join_server_ref_link {
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    align-self: center;
+}
+.join_server_ref_link:hover {
+    color: rgb(113, 70, 255);
+}

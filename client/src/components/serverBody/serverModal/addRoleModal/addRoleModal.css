@@ -1,0 +1,47 @@
+.list_user_include {
+    max-height: 60vh;
+    overflow-y: scroll;
+}
+
+.list_user_include_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.list_user_include_item img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.list_user_include_item input {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 0;
+    border: 0;
+    margin-right: 10px;
+}
+.list_user_include_item h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.role_list_selected_member {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.role_list_selected_member span {
+    background-color: rgb(194, 194, 194);
+    padding: 2px 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 5px;
+}

@@ -1,0 +1,15 @@
+.profileModal_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.profileModal_container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}

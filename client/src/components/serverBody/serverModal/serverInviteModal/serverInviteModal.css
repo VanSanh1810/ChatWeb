@@ -1,0 +1,40 @@
+.user_to_invite_item_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(213, 213, 213);
+    border-radius: 10px;
+    margin: 8px 0px;
+}
+.user_to_invite_item_main img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.user_to_invite_item_main button {
+    border-radius: 8px;
+    border: 0;
+    background: 0;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(15, 132, 15);
+    font-weight: 700;
+    font-size: 14px;
+    background-color: rgb(174, 254, 174);
+    padding: 5px 10px;
+    border: 1px solid rgb(19, 166, 0);
+    cursor: pointer;
+}
+
+.user_to_invite_item_main button.invited {
+    border-radius: 8px;
+    border: 0;
+    background: 0;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(145, 145, 145);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 5px 10px;
+}

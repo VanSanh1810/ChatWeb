@@ -1,0 +1,52 @@
+.profileReq_item {
+    background-color: rgb(223, 223, 223);
+    min-height: 60px;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 10px;
+    overflow: auto !important;
+    box-shadow: 10px 10px 9px -5px rgba(0, 0, 0, 0.07);
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    max-width: 100%;
+    overflow: hidden !important;
+}
+
+.profileReq_item img {
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    border-radius: 50%;
+}
+
+.req_action_btn_container {
+    display: flex;
+    align-items: stretch;
+}
+
+.profileReq_item:hover .req_action_btn_container button {
+    transform: translate(0px, 0px);
+}
+
+.req_action_btn_container button {
+    border: none;
+    min-height: 10.5vh;
+    width: 50px;
+    cursor: pointer;
+    transform: translate(100px, 0px);
+    transition: all ease-in-out 0.18s;
+}
+
+.req_action_btn_container button:hover {
+    font-size: larger;
+}
+
+.req_action_btn_container button.green {
+    background-color: rgb(149, 255, 44);
+}
+
+.req_action_btn_container button.red {
+    background-color: rgb(255, 101, 101);
+}
